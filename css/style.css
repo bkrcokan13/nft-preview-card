@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.nft-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 300px;
+    border-radius: 15px;
+    padding:15px;
+    
+    background-color: hsl(216, 50%, 16%);
+}
+
+.nft-picture {
+    height: 270px;
+    width: 270px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-image: url('/img/image-equilibrium.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.nft-picture:hover {
+
+    transition: 0.9s linear;
+    cursor: pointer;
+    .nft-view{
+        background-color: hsla(178, 100%, 50%, 0.678);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 270px;
+        width: 270px;
+        border-radius: 10px;
+        
+        .view-icon {
+            background-image: url('/img/icon-view.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 30px;
+            width: 30px;
+        }
+        
+    }
+}
+
+
+.nft-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2px;
+}
+
+.nft-title {
+    margin-top: 20px;
+}
+
+.nft-title h3:hover {
+    color:hsla(178, 100%, 50%, 0.678);
+    overflow: hidden;
+    cursor: pointer;
+
+    .nft-view {
+        background-color: hsla(178, 100%, 50%, 0.678);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 270px;
+        width: 270px;
+        border-radius: 10px;
+        
+        .view-icon {
+            background-image: url('/img/icon-view.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 100px;
+            width: 100px;
+        }
+        
+    }
+}
+.nft-title h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    font-size: 22px;
+    color:hsl(0, 0%, 100%);
+}
+
+.nft-description p {
+    color: hsl(215, 27%, 63%);
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    margin-top: 15px;
+}
+
+.nft-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nft-icon {
+    height: 15px;
+    width: 15px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.nft-price {
+    display: flex;
+    align-items: center;
+    font-family: "Outfit";
+    gap: 4px;
+}
+
+.nft-value {
+    color: hsl(178, 100%, 50%);
+}
+
+.nft-available {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    font-family: "Outfit";
+    font-size: 14px;
+}
+
+.nft-left-day {
+    color: hsl(215, 27%, 63%);
+}
+
+.line{
+    width: 90%;
+    height: 2px;
+    margin-top: 12px;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+.nft-creator {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+
+}
+
+.nft-creator-username {
+    margin-left: 10px;
+    margin-top: 5px;
+    font-family: "Outfit";
+    font-size: 14px;
+    color: hsl(215, 27%, 63%);
+}
+
+.nft-creator-username a {
+    text-decoration: none;
+    color: hsl(178, 100%, 50%);
+}
+
+
+
+.nft-creator-picture {
+    height: 30px;
+    width: 30px;
+    margin-left: 4px;
+    margin-top: 5px;
+    border-radius: 150px;
+    background-image: url('/img/image-avatar.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid white;
+}
+
+
+.attribution {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    text-align: center;
+    margin-top: 15px;
+    font-family: "Outfit";
+    color: whitesmoke;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+    margin: 5px;
+    
+
+}
+
+@media screen and (max-width:320px) {
+
+    .attribution {
+        font-size: 13px;
+        padding: 2px;
+    }
+    .attribution a{
+      
+        margin: 0;
+    
+    }
+    
+}
